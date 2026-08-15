@@ -1,0 +1,13 @@
+{
+  "candidate": "domain_balanced_compact3d_v2",
+  "validation_training_split": "cv_a",
+  "hemisphere2d_members": 5,
+  "compact3d_members": 5,
+  "probability_weights": {
+    "hemisphere2d": 0.75,
+    "compact3d": 0.25
+  },
+  "calibration": "none",
+  "test_sample_independence": true,
+  "network_required": false
+}

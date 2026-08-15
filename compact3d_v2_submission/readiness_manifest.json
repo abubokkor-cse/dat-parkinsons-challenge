@@ -1,0 +1,110 @@
+{
+  "ready_to_upload": true,
+  "created_date": "2026-08-14",
+  "candidate": "domain_balanced_compact3d_v2",
+  "upload_artifact": {
+    "path": "submission_compact3d_v2_ready_20260814.zip",
+    "size_bytes": 46552267,
+    "sha256": "e81f088318abc7814c5a2673814972a2ace39c75bd8fc7728cc2fd033144e7ce",
+    "entries": 15,
+    "root_main_py": true,
+    "crc_test_passed": true,
+    "unsafe_or_unwanted_entries": 0
+  },
+  "inference": {
+    "hemisphere2d_members": 5,
+    "compact3d_members": 5,
+    "hemisphere2d_weight": 0.75,
+    "compact3d_weight": 0.25,
+    "calibration": "none",
+    "network_required": false,
+    "test_sample_independence": true
+  },
+  "checkpoint_provenance": {
+    "passed": true,
+    "matched_files": 10,
+    "hemisphere2d_source": "modal_results/robust_hemisphere_seed73_cv_a_download/cv_a",
+    "compact3d_source": "modal_results/compact3d_v2_historical_download/compact3d_domain_balanced_seed73_v2_historical/cv_a/runs"
+  },
+  "oof_reproduction": {
+    "passed": true,
+    "cases": 30,
+    "cases_per_fold": 6,
+    "cross_device_tolerance": 0.0005,
+    "maximum_absolute_error_2d": 0.00014993022546767876,
+    "maximum_absolute_error_3d": 0.00019418111251029435,
+    "maximum_volume_cache_error": 0.0
+  },
+  "runtime_tests": {
+    "offline_5_scan_arm64": {
+      "passed": true,
+      "exit_code": 0,
+      "network_disabled": true,
+      "rows": 5,
+      "schema_order_uniqueness_and_probability_checks": true
+    },
+    "offline_20_scan_arm64": {
+      "passed": true,
+      "exit_code": 0,
+      "network_disabled": true,
+      "rows": 20,
+      "schema_order_uniqueness_and_probability_checks": true,
+      "scored_against_provided_labels": true,
+      "logloss": 0.2579322379235926,
+      "auroc": 0.989010989010989,
+      "brier": 0.08055921589180307,
+      "accuracy": 0.85,
+      "runtime_seconds_approximate": 53.7
+    },
+    "host_mps_vs_docker_cpu": {
+      "passed": true,
+      "rows": 5,
+      "maximum_absolute_difference": 0.00000287052243948,
+      "mean_absolute_difference": 0.000000973809510441
+    },
+    "published_production_amd64_image": {
+      "passed": null,
+      "status": "waived_by_user",
+      "note": "Published production image pull was stopped before completion at the user's direction; no result is claimed."
+    }
+  },
+  "domain_holdout_cv_b": {
+    "analysis_only": true,
+    "rows": 1362,
+    "families": 5,
+    "baseline_2d_logloss": 0.30148890777346166,
+    "baseline_2d_auroc": 0.9426344946180385,
+    "frozen_blend_logloss": 0.2893935469806628,
+    "frozen_blend_auroc": 0.946106376726418,
+    "families_improved": 4,
+    "bootstrap_probability_blend_better": 0.9983
+  },
+  "standard_oof_cv_a": {
+    "rows": 1362,
+    "baseline_2d_logloss": 0.300822589,
+    "baseline_2d_auroc": 0.943499744,
+    "frozen_blend_logloss": 0.289264574,
+    "frozen_blend_auroc": 0.947610496
+  },
+  "smoke_branch_audit": {
+    "analysis_only": true,
+    "rows": 20,
+    "baseline_2d_logloss": 0.238794488,
+    "baseline_2d_auroc": 1.0,
+    "compact3d_logloss": 0.423569081,
+    "compact3d_auroc": 0.912087912,
+    "frozen_blend_logloss": 0.257933411,
+    "frozen_blend_auroc": 0.989010989,
+    "used_to_modify_candidate": false
+  },
+  "external_data": {
+    "ppmi_kaggle_used_for_training": false,
+    "ppmi_kaggle_used_for_calibration": false,
+    "ppmi_kaggle_used_for_selection": false,
+    "status": "quarantined_analysis_only"
+  },
+  "claims": {
+    "rank_1_guaranteed": false,
+    "hidden_logloss_guaranteed": false
+  }
+}

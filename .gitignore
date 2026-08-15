@@ -1,0 +1,22 @@
+# Competition data and participant-level outputs
+data/
+*.nii
+*.nii.gz
+*.csv
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Credentials and machine-local configuration
+.env
+.env.*
+*.pem
+*.key
+config/private.*
+
+# Python and editor state
+__pycache__/
+.pytest_cache/
+.venv/
+.DS_Store
