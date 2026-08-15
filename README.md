@@ -3,6 +3,8 @@
 This repository preserves the best verified submission from this research
 workspace for the DrivenData DaT Parkinson's Challenge.
 
+DrivenData participant profile: [abubokkordev](https://www.drivendata.org/users/abubokkordev/)
+
 | Public result | Value |
 |---|---:|
 | Log loss | `0.3309` |
