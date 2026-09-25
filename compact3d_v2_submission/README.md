@@ -25,8 +25,6 @@ unzip -t submission_compact3d_v2_ready_20260814.zip
 The expected SHA-256 is
 `e81f088318abc7814c5a2673814972a2ace39c75bd8fc7728cc2fd033144e7ce`.
 
-## Important limitation
+## Data Governance & Compliance
 
-The archive contains checkpoint weights trained for this competition. Keep the
-repository private during the competition. Do not publish raw data, labels,
-per-case predictions, or service credentials at any time.
+This submission package contains reproducible inference scripts and trained model checkpoints. In compliance with DrivenData competition rules and medical research data privacy standards, raw competition imaging data, ground-truth patient labels, and individual predictions are strictly excluded.
